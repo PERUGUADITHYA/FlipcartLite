@@ -266,3 +266,54 @@ body {
         box-shadow: 0 0 0 0 rgba(255, 152, 0, 0);
     }
 }
+
+/* ================= MOBILE ONLY FIX ================= */
+
+@media (max-width: 768px) {
+
+    .headerContainer {
+        height: auto;
+        padding: 12px 14px;
+        flex-direction: column;
+        /* 🔥 MOBILE ONLY */
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    /* LOGO + PROFILE ROW */
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .profileWrapper {
+        align-self: flex-end;
+    }
+
+    /* SEARCH FULL WIDTH */
+    .searchBox {
+        width: 100%;
+    }
+
+    /* CATEGORY FULL WIDTH */
+    .categoryMenu select {
+        width: 100%;
+    }
+
+    /* Hide profile name (icon only) */
+    .profileName {
+        display: none;
+    }
+
+    /* Dropdown position fix */
+    .profileDropdown {
+        right: 0;
+        top: 42px;
+    }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+    .logoName {
+        display: none;
+    }
+}
