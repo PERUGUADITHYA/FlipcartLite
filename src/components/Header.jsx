@@ -18,7 +18,7 @@ const Header = ({
   const [openProfile, setOpenProfile] = useState(false);
 
   useEffect(() => {
-    fetch("/data/products.json")
+    fetch(`${process.env.PUBLIC_URL}/data/products.json`)
       .then((res) => res.json())
       .then((data) => {
         const uniqueCats = [...new Set(data.map((p) => p.category))];

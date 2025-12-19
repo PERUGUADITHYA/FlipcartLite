@@ -9,7 +9,7 @@ const ProductDetails = ({ addToCart }) => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch("/data/products.json")
+    fetch(`${process.env.PUBLIC_URL}/data/products.json`)
       .then((r) => r.json())
       .then((data) => {
         const p = data.find((x) => String(x.id) === String(id));

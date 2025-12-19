@@ -6,7 +6,7 @@ const HomeCarousel = () => {
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    fetch("/data/banners.json")
+    fetch(`${process.env.PUBLIC_URL}/data/banners.json`)
       .then((res) => res.json())
       .then((data) => setBanners(data.topBanners))
       .catch(console.error);

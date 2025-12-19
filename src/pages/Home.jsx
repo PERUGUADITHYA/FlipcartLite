@@ -6,8 +6,11 @@ const Home = ({ addToCart, searchQuery, selectedCategory }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => res.json())
+    fetch(`${process.env.PUBLIC_URL}/data/products.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load products");
+        return res.json();
+      })
       .then((data) => setProducts(data))
       .catch((err) => console.error("Products load error", err));
   }, []);
@@ -23,10 +26,8 @@ const Home = ({ addToCart, searchQuery, selectedCategory }) => {
 
   return (
     <div className="homePage">
-      {/* 🔥 MAIN HERO BANNER */}
       <HomeCarousel />
 
-      {/* 🔥 PRODUCT LIST */}
       <section className="productGrid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
