@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FlipcartLite/static/css/main.379ab930.css",
+    "main.js": "/FlipcartLite/static/js/main.d4f2d785.js",
+    "index.html": "/FlipcartLite/index.html",
+    "main.379ab930.css.map": "/FlipcartLite/static/css/main.379ab930.css.map",
+    "main.d4f2d785.js.map": "/FlipcartLite/static/js/main.d4f2d785.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.379ab930.css",
+    "static/js/main.d4f2d785.js"
+  ]
+}
