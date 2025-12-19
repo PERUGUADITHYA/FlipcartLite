@@ -272,47 +272,44 @@ body {
 @media (max-width: 768px) {
 
     .headerContainer {
-        height: auto;
-        padding: 12px 14px;
-        flex-direction: column;   /* 🔥 MOBILE ONLY */
+        position: sticky;
+        top: 0;
+
+        padding: 12px;
+        flex-direction: column;
         align-items: stretch;
         gap: 10px;
     }
 
-    /* LOGO + PROFILE ROW */
+    /* Row 1: Logo + Profile */
     .logo {
-        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .profileWrapper {
         align-self: flex-end;
     }
 
-    /* SEARCH FULL WIDTH */
+    /* Search full width */
     .searchBox {
         width: 100%;
     }
 
-    /* CATEGORY FULL WIDTH */
+    /* Category full width */
     .categoryMenu select {
         width: 100%;
     }
 
-    /* Hide profile name (icon only) */
+    /* Hide name on mobile */
     .profileName {
         display: none;
     }
 
-    /* Dropdown position fix */
+    /* Dropdown fix */
     .profileDropdown {
-        right: 0;
         top: 42px;
-    }
-}
-
-/* EXTRA SMALL PHONES */
-@media (max-width: 480px) {
-    .logoName {
-        display: none;
+        right: 0;
     }
 }

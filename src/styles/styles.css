@@ -11,7 +11,7 @@ body,
     height: 100%;
 }
 
-body {
+/* body {
     background: #f5f7fa;
     padding-top: 80px;
     color: #333;
@@ -20,7 +20,7 @@ body {
 body.auth-page {
     padding-top: 0 !important;
     overflow: hidden;
-}
+} */
 
 /* HEADER */
 .headerContainer {
@@ -796,5 +796,10 @@ body.auth-page {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .carousel {
+        margin-top: 10px;
     }
 }
