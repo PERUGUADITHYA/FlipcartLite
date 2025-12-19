@@ -274,8 +274,7 @@ body {
     .headerContainer {
         height: auto;
         padding: 12px 14px;
-        flex-direction: column;
-        /* 🔥 MOBILE ONLY */
+        flex-direction: column;   /* 🔥 MOBILE ONLY */
         align-items: stretch;
         gap: 10px;
     }
