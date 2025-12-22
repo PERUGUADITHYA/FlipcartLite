@@ -63,7 +63,7 @@ const Header = ({
           src="https://images.unsplash.com/photo-1654573817889-296cad084c97?w=500"
           alt="Logo"
         />
-        <span className="logoName">Flipkart Lite</span>
+        <span className="logoName">FlipZone</span>
       </motion.div>
 
       {/* SEARCH */}
