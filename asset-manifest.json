@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/FlipZone/static/css/main.29999e1a.css",
-    "main.js": "/FlipZone/static/js/main.ac8beb16.js",
+    "main.css": "/FlipZone/static/css/main.f5b7178a.css",
+    "main.js": "/FlipZone/static/js/main.d430aafa.js",
     "index.html": "/FlipZone/index.html",
-    "main.29999e1a.css.map": "/FlipZone/static/css/main.29999e1a.css.map",
-    "main.ac8beb16.js.map": "/FlipZone/static/js/main.ac8beb16.js.map"
+    "main.f5b7178a.css.map": "/FlipZone/static/css/main.f5b7178a.css.map",
+    "main.d430aafa.js.map": "/FlipZone/static/js/main.d430aafa.js.map"
   },
   "entrypoints": [
-    "static/css/main.29999e1a.css",
-    "static/js/main.ac8beb16.js"
+    "static/css/main.f5b7178a.css",
+    "static/js/main.d430aafa.js"
   ]
 }
